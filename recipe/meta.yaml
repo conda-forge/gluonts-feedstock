@@ -1,5 +1,5 @@
 {% set name = "gluonts" %}
-{% set version = "0.11.7" %}
+{% set version = "0.11.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gluonts-{{ version }}.tar.gz
-  sha256: c5db67304853db450620edf2a5bf248eb7e6ee65e4290641bf725e4a2e7d00db
+  sha256: fa095bfb37aa491f3c751e506354616a278f889c6002b0cd2ad880fd40394064
 
 build:
   noarch: python
