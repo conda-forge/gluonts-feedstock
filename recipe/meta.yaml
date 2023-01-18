@@ -26,7 +26,7 @@ requirements:
     - tqdm >=4.23,<5.dev0
     - toolz >=0.10,<1.dev0
     - typing-extensions >=4.0,<5.dev0
-    - torch 
+    - pytorch 
     - pytorch-lightning 
     - protobuf 
 
