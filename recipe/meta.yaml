@@ -1,5 +1,5 @@
 {% set name = "gluonts" %}
-{% set version = "0.13.3" %}
+{% set version = "0.13.4" %}
 
 package:
   name: {{ name|lower }}
@@ -21,7 +21,7 @@ requirements:
   run:
     - python >=3.7
     - numpy >=1.16,<2.dev0
-    - pandas >=1.0,<2.dev0
+    - pandas >=1.0,<3.dev0
     - pydantic >=1.7,<2.dev0
     - tqdm >=4.23,<5.dev0
     - toolz >=0.10,<1.dev0
