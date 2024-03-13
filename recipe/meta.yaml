@@ -1,5 +1,5 @@
 {% set name = "gluonts" %}
-{% set version = "0.14.3" %}
+{% set version = "0.14.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gluonts-{{ version }}.tar.gz
-  sha256: 955602c7853fc4b252451360848f58542df830fe89c10d38473c4d2000bd9993
+  sha256: e5ca34b89ad1f82b0202f71b24c6d72cd640aa6afb48e88df1da98fcb6cfc687
 
 build:
   noarch: python
@@ -21,9 +21,9 @@ requirements:
   run:
     - python >=3.7
     - numpy >=1.16,<2.dev0
-    - pandas >=1.0,<3.dev0
-    - pydantic >=1.7,<2.dev0
-    - tqdm >=4.23,<5.dev0
+    - pandas >=1.0,<2.2.0
+    - pydantic >=1.7,<3.dev0
+    - tqdm >4.23,<5.dev0
     - toolz >=0.10,<1.dev0
     - typing-extensions >=4.0,<5.dev0
     - pytorch
