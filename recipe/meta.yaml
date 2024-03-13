@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gluonts-{{ version }}.tar.gz
-  sha256: 955602c7853fc4b252451360848f58542df830fe89c10d38473c4d2000bd9993
+  sha256: e5ca34b89ad1f82b0202f71b24c6d72cd640aa6afb48e88df1da98fcb6cfc687
 
 build:
   noarch: python
