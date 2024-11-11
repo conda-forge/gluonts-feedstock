@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gluonts-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/gluonts-{{ version }}.tar.gz
   sha256: 955602c7853fc4b252451360848f58542df830fe89c10d38473c4d2000bd9993
 
 build:
@@ -18,6 +18,7 @@ requirements:
   host:
     - python >=3.7
     - pip
+    - setuptools
   run:
     - python >=3.7
     - numpy >=1.16,<2.dev0
