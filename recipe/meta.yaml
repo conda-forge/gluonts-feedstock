@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -21,7 +21,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - numpy >=1.16,<2.dev0
+    - numpy >=1.16,<2.2
     - pandas >=1.0,<3.dev0
     - pydantic >=1.7,<3.dev0
     - tqdm >=4.23,<5.dev0
