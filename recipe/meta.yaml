@@ -31,7 +31,6 @@ requirements:
     # torch extra
     - pytorch >=2.10,<3.dev0
     - lightning >=2.2.2,<2.7
-    - pytorch-lightning >=2.2.2,<2.7
     - scipy
 
 test:
