@@ -1,5 +1,5 @@
 {% set name = "gluonts" %}
-{% set version = "0.16.2" %}
+{% set version = "0.17.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/gluonts-{{ version }}.tar.gz
-  sha256: 1fef7fff186b567edf9db7cd052c10ee82fb74bb4b4914b925340ba33d494548
+  sha256: f815d4a069be974a2a62c0eb7409a0b6c5c58fd960b562ba2a530fc2d5763c7e
 
 build:
   noarch: python
@@ -18,18 +18,20 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools
+    - hatchling
   run:
-    - python >={{ python_min }}
-    - numpy >=1.16,<2.2
-    - pandas >=1.0,<3.dev0
-    - pydantic >=1.7,<3.dev0
-    - tqdm >=4.23,<5.dev0
-    - toolz >=0.10,<1.dev0
-    - typing-extensions >=4.0,<5.dev0
-    - pytorch
-    - pytorch-lightning
-    - protobuf
+    # core dependencies
+    - python >={{ python_min }},<3.15
+    - numpy >=1.16,<3
+    - pandas >=1.4,<3
+    - pydantic >=1.7,<3
+    - tqdm >=4.23,<5
+    - toolz >=0.10,<1
+    - typing-extensions >=4.0,<5
+    # torch extra
+    - pytorch >=2.10,<3
+    - lightning >=2.2.2,<2.7
+    - scipy
 
 test:
   imports:
