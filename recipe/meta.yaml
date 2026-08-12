@@ -50,5 +50,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - shchur
     - claytonparnell
     - giswqs
