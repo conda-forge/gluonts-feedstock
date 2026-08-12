@@ -20,16 +20,19 @@ requirements:
     - pip
     - setuptools
   run:
-    - python >={{ python_min }}
-    - numpy >=1.16,<2.2
-    - pandas >=1.0,<3.dev0
+    # core dependencies
+    - python >={{ python_min }},<3.15
+    - numpy >=1.16,<3.dev0
+    - pandas >=1.4,<3.dev0
     - pydantic >=1.7,<3.dev0
     - tqdm >=4.23,<5.dev0
     - toolz >=0.10,<1.dev0
     - typing-extensions >=4.0,<5.dev0
-    - pytorch
-    - pytorch-lightning
-    - protobuf
+    # torch extra
+    - pytorch >=2.10,<3.dev0
+    - lightning >=2.2.2,<2.7
+    - pytorch-lightning >=2.2.2,<2.7
+    - scipy
 
 test:
   imports:
