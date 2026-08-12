@@ -41,8 +41,6 @@ test:
   requires:
     - pip
     - python {{ python_min }}
-    # force the CPU pytorch build so the test env solves on GPU-less CI
-    - pytorch =*=cpu*
 
 about:
   home: https://github.com/awslabs/gluonts/
